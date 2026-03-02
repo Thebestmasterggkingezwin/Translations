@@ -1,4 +1,4 @@
-name: Send Update to Private Server Repos
+name: Send Update to Private Server Repo
 
 on:
   push:
@@ -6,32 +6,26 @@ on:
       - main
 
 jobs:
-  update-private-repos:
+  update-private-repo:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        target_repo: 
-          - Bestrust-Servers/Bestrust-Vanilla-Server-Files
-          - Bestrust-Servers/Bestrust-Modded-Server-Files
-      fail-fast: false 
 
     steps:
-      - name: Checkout Target Repository
+      - name: Checkout Private Target Repository
         uses: actions/checkout@v4
         with:
-          repository: ${{ matrix.target_repo }}
+          repository: Bestrust-Servers/Server-Files
           token: ${{ secrets.PRIVATE_REPO_TOKEN }}
           submodules: true
 
       - name: Update the Submodule Pointer
         run: |
-          git submodule update --remote oxide/lang
+          git submodule update --remote all_servers/oxide/lang
 
       - name: Commit and Push to Target Repo
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add oxide/lang
+          git add all_servers/oxide/lang
           
           # This line prevents the Action from crashing if the pointer didn't actually change
           git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-updated language submodule pointer" && git push origin main)
