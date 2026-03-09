@@ -1,3 +1,3 @@
 {
-  "Message": "Nem tudsz ilyen gyorsan újra öngyilkos lenni, várj {0} másodpercet"
+  "Message": "Nem tudsz ilyen gyorsan újra öngyilkos lenni, várj {0:F1} másodpercet"
 }

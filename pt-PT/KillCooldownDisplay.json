@@ -1,3 +1,3 @@
 {
-  "Message": "Você não pode se suicidar novamente tão rápido, espere {0} segundos"
+  "Message": "Você não pode se suicidar novamente tão rápido, espere {0:F1} segundos"
 }

@@ -1,3 +1,3 @@
 {
-  "Message": "You can't suicide again so quickly, wait {0} seconds"
+  "Message": "You can't suicide again so quickly, wait {0:F1} seconds"
 }
