@@ -28,4 +28,4 @@ jobs:
           git add all_servers/oxide/lang
           
           # This line prevents the Action from crashing if the pointer didn't actually change
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Updated translations submodule" -m "Repo: https://github.com/Bestrust-Servers/Translations" && git push origin main)
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Updated Bestrust-Servers/Translations submodule" -m "Repo: https://github.com/Bestrust-Servers/Translations" && git push origin main)
