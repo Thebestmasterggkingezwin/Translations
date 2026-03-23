@@ -1,4 +1,4 @@
 {
-  "Enabled": "Çevrimdışı Baskın Koruması şu anda aktif.\nSadece 13:00 ile 23:59 CET arasında baskın yapabilirsiniz.",
-  "Disabled": "Çevrimdışı Baskın Koruması artık aktif değil.\n23:59 CET'ye kadar baskın yapabilirsiniz."
+  "Enabled": "Çevrimdışı Baskın Koruması şu anda aktif.\nSadece 13:00 ile 22:59 CET arasında baskın yapabilirsiniz.",
+  "Disabled": "Çevrimdışı Baskın Koruması artık aktif değil.\n22:59 CET'ye kadar baskın yapabilirsiniz."
 }
